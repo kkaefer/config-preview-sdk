@@ -25,7 +25,8 @@ commands:
 
 ```yaml
 examples:
-  - description: Greeting a user named Anna
+  simple_greeting:
+    description: Greeting a user named Anna
     usage:
       version: 2.1
       orbs:
@@ -38,7 +39,7 @@ examples:
                 username: "Anna"
 ```
 
-Please note that `examples` is an array, so it can contain multiple entries.
+Please note that `examples` can contain multiple keys at the same level as `simple_greeting`, allowing for multiple examples.
 
 ## Expected usage results
 
@@ -46,7 +47,8 @@ The above usage example can be supplemented with a `result` key, demonstrating w
 
 ```yaml
 examples:
-  - description: Greeting a user named Anna
+  simple_greeting:
+    description: Greeting a user named Anna
     usage:
       version: 2.1
       orbs:
